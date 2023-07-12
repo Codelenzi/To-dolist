@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2> To-Do List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text" onkeydown="handleKeyDown(event)">
+                <button onclick="addTask()">ADD</button>
+            </div>
+            <ul id="list-con">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+            <div class="progress-section">
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-label" id="progress-label">0%</div>
+            </div>
+            <button id="reset-button" onclick="resetTasks()">Reset</button>
+        </div>
+    </div>    
+  
+    <script src="script.js"></script>
+</body>
+</html>
